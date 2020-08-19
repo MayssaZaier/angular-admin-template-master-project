@@ -78,24 +78,27 @@
         <div class="card-header">
           <strong>Delete</strong>
         </div>
-        <div class="card-body">
+        <div class="card-body" [formGroup]="deleteForm">
           <div class="form-group">
             <label for="company">Class</label>
-            <input type="text" class="form-control" id="company" placeholder="Enter class" required >
+            <input formControlName="class"
+            name="class" type="text" class="form-control" id="class" placeholder="Enter class" required >
           </div>
           <div class="form-group">
             <label for="street">DnsName</label>
-            <input type="text" class="form-control" id="street" placeholder="Enter DnsName" required>
+            <input formControlName="dnsname"
+            name="dnsname" type="text" class="form-control" id="dnsname" placeholder="Enter DnsName" required>
           </div>
           <div class="row">
             <div class="form-group col-sm-8">
               <label for="city">Adress</label>
-              <input type="text" class="form-control" id="city" placeholder="Enter the adress" required>
+              <input formControlName="adress"
+              name="adress" type="text" class="form-control" id="adress" placeholder="Enter the adress" required>
             </div>
           </div>
           <div class="form-group">
-            <button class="btn btn-sm btn-danger"  [routerLink]="['/base/cardsdelete']">Delete</button>
-            
+            <button class="btn btn-sm btn-danger" (click)="delete()" >Delete</button>
+            <!--[routerLink]="['/base/cardsdelete']"-->
           </div>
         </div>
       </div>
