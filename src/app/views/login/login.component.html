@@ -51,46 +51,60 @@
 </div> -->
 
 <div class="container header">
+  <div class="row">
+    <div class="col-md-6 header-left">
+      <i class="fab fa-canadian-maple-leaf fa-3x"></i>
+    </div>
 
-		<div class="row">
-
-			<div class="col-md-6 header-left">
-				<i class="fab fa-canadian-maple-leaf fa-3x"></i>
-      </div>
-      
-			<div class="col-md-6 header-right">
-        <img  src="assets/img/brand/orange.png" height="150px" alt="logo">
-				<!-- <h4>Login</h4> -->
-      </div>
-      
-		</div>		
+    <div class="col-md-6 header-right">
+      <img src="assets/img/brand/orange.png" height="150px" alt="logo" />
+      <!-- <h4>Login</h4> -->
+    </div>
   </div>
-  
-	<div class="container content">
-			<div class="form-content">
-      <h4>Please fill out the details to continue with our website.</h4>
-      
-				<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1" >Username</span>
-				  </div>
-				  <input type="text" class="form-control" aria-label="Username" placeholder="Enter your username" autocomplete="username" required>
-        </div>
-        
-				<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-					<span class="input-group-text" id="basic-addon2">Password</span>
-				  </div>
-				  <input type="password" class="form-control" aria-label="Password" placeholder="Enter your password" autocomplete="current-password" required  >
-        </div>
-        
-				<div class="input-group mb-3">
-          <!-- <button type="button" class="btn btn-default">Login</button> -->
-          <button [routerLink]="['/dashboard']">Login</button>
-        </div>
-        
-        <!-- <div class="input-group mb-3">
+</div>
+
+<div class="container content">
+  <div class="form-content" [formGroup]="loginForm">
+    <h4>Please fill out the details to continue with our website.</h4>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Username</span>
+      </div>
+      <input
+        type="text"
+        formControlName="login"
+        name="login"
+        aria-label="Username"
+        placeholder="Enter your username"
+        autocomplete="username"
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon2">Password</span>
+      </div>
+      <input
+        type="password"
+        formControlName="password"
+        name="password"
+        aria-label="Password"
+        placeholder="Enter your password"
+        autocomplete="current-password"
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <!-- <button type="button" class="btn btn-default">Login</button> -->
+      <button (click)="test()">Login</button>
+    </div>
+
+    <!-- <div class="input-group mb-3">
           <button type="button" class="btn btn-default">Forgot password?</button>
         </div> -->
-			</div>
-		</div> -->
+  </div>
+</div>
+-->
