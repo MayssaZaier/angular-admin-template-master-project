@@ -15,7 +15,7 @@ export class LoginComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
-  test() {
+  login() {
     console.log("button clicked");
     const login_data = this.loginForm.value;
     console.log("login", login_data.login, "password", login_data.password);
