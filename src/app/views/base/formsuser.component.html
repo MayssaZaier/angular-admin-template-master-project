@@ -356,19 +356,37 @@
         <div class="card-header">
           <strong>Create User</strong> 
         </div>
-        <div class="card-body">
+        <div class="card-body" [formGroup]="UserForm">
           <form action="" method="post" class="form-horizontal">
             <div class="form-group row">
               <label class="col-md-3 col-form-label" for="hf-email">Username</label>
               <div class="col-md-9">
-                <input type="email" id="hf-email" name="hf-email" class="form-control" placeholder="Enter Username.." autocomplete="email" required >
+                <input
+                  formControlName="email"
+                  type="email" 
+                  id="email" 
+                  name="hf-email" 
+                  class="form-control" 
+                  placeholder="Enter Username.."
+                  autocomplete="email" 
+                  required 
+                />            
                 <span class="help-block">Please enter your username</span>
               </div>
             </div>
             <div class="form-group row">
               <label class="col-md-3 col-form-label" for="hf-password">Password</label>
               <div class="col-md-9">
-                <input type="password" id="hf-password" name="hf-password" class="form-control" placeholder="Enter Password.." autocomplete="current-password" required >
+                <input
+                  formControlName="password"
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  class="form-control"
+                  placeholder="Enter Password.." 
+                  autocomplete="current-password" 
+                  required 
+                />
                 <span class="help-block">Please enter your password</span>
               </div>
             </div>

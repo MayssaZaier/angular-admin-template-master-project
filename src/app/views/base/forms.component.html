@@ -76,37 +76,86 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <strong>Create AAAARecord</strong>
+          <strong>Create AAAARecord</strong> 
         </div>
-        <div class="card-body">
+        <div class="card-body" [formGroup]="AAAArecordForm">
           <div class="form-group">
             <label for="company">Partition</label>
-            <input type="text" class="form-control" id="company" placeholder="Enter Partition" required >
+            <input 
+              formControlName="partition"
+              name="partition"
+              type="text" 
+              class="form-control"
+              id="partition"
+              placeholder="Enter Partition" 
+              required 
+            />
           </div>
           <div class="form-group">
             <label for="vat">Container</label>
-            <input type="text" class="form-control" id="vat" placeholder="Enter container" required >
+            <input 
+              formControlName="container"
+              name="container"
+              type="text" 
+              class="form-control"
+              id="container"
+              placeholder="Enter container" 
+              required 
+             />
           </div>
           <div class="form-group">
             <label for="street">DnsName</label>
-            <input type="text" class="form-control" id="street" placeholder="Enter DnsName" required >
+            <input 
+            formControlName="dnsname"
+            name="dnsname"
+            type="text"
+            class="form-control"
+            id="dnsname"
+            placeholder="Enter DnsName"
+            required
+            />
           </div>
           <div class="row">
             <div class="form-group col-sm-8">
               <label for="city">Adress</label>
-              <input type="text" class="form-control" id="city" placeholder="Enter the adress" required >
+              <input
+              formControlName="adress"
+                name="adress"
+                type="text"
+                class="form-control"
+                id="adress"
+                placeholder="Enter the adress"
+                required
+                />
             </div>
             <div class="form-group col-sm-4">
               <label for="postal-code">Ttl</label>
-              <input type="text" class="form-control" id="postal-code" placeholder="Enter Ttl" required >
+              <input 
+               name="ttl"
+               type="text"
+               class="form-control"
+               id="ttl"
+               placeholder="Enter the TTl"
+               required
+              />
             </div>
           </div>
           <div class="form-group">
             <label for="country">Description</label>
-            <input type="text" class="form-control" id="country" placeholder="Enter the description" required >
+            <input
+              name="description"
+              type="text"
+              class="form-control"
+              id="description"
+              placeholder="Enter the description" 
+              required 
+            />
           </div>
           <div class="form-group">
-            <button class="btn btn-sm btn-danger" [routerLink]="['/base/cardscreate']">Create</button>
+            <button class="btn btn-sm btn-danger" (click)="create()">
+              Create
+            </button>
+            <!-- <button class="btn btn-sm btn-danger" [routerLink]="['/base/cardscreate']">Create</button> -->
           </div>
         </div>
       </div>

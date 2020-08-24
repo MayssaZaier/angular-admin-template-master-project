@@ -298,10 +298,6 @@ export const navItems: INavData[] = [
     // icon: 'icon-puzzle',
     children: [
       {
-        name: 'Save',
-        url: '/base/cards',
-      },
-      {
         name: 'Delete',
         url: '/base/formsdelete',
       },

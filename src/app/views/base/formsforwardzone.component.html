@@ -79,35 +79,84 @@
         <div class="card-header">
           <strong>Create ForwardZone</strong>
         </div>
-        <div class="card-body">
+        <div class="card-body" [formGroup]="ForwardzoneForm">
           <div class="form-group">
             <label for="company">Partition</label>
-            <input type="text" class="form-control" id="company" placeholder="Enter Partition" required >
+            <input
+              formControlName="partition"
+              name="partition"
+              type="text"
+              class="form-control"
+              id="partition"
+              placeholder="Enter Partition"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="vat">Server</label>
-            <input type="text" class="form-control" id="vat" required >
+            <input
+              formControlName="server"
+              name="server"
+              type="text"
+              class="form-control"
+              id="server"
+              placeholder="Enter Server"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="street">View</label>
-            <input type="text" class="form-control" id="street" required >
+          <label for="street">View</label>
+          <input
+           formControlName="view"
+           name="view"
+           type="text"
+           class="form-control"
+           id="view"
+           placeholder="Enter View"
+           required
+         />
           </div>
           <div class="row">
             <div class="form-group col-sm-8">
               <label for="city">Name</label>
-              <input type="text" class="form-control" id="city" required >
+              <input
+               formControlName="name"
+               name="name"
+               type="text"
+               class="form-control"
+               id="name"
+               placeholder="Enter Name"
+               required
+             />
             </div>
             <div class="form-group col-sm-4">
               <label for="postal-code">ZoneId</label>
-              <input type="text" class="form-control" id="postal-code" required  >
+              <input
+               formControlName="zoneid"
+               name="zoneid"
+               type="text"
+               class="form-control"
+               id="zoneid"
+               placeholder="Enter ZoneId"
+               required
+             />
             </div>
           </div>
           <div class="form-group">
             <label for="country">Description</label>
-            <input type="text" class="form-control" id="country" placeholder="Enter the description" required >
+            <input
+             name="description"
+             type="text"
+             class="form-control"
+             id="description"
+             placeholder="Enter the description" 
+             required 
+           />
           </div>
           <div class="form-group">
-            <button class="btn btn-sm btn-danger" [routerLink]="['/base/cardscreate']">Create</button>
+            <button class="btn btn-sm btn-danger" (click)="create()">
+              Create
+            </button>
           </div>
         </div>
       </div>
