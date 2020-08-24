@@ -15,7 +15,7 @@ import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
 import { TablesAComponent } from './tablesArecord.component';
 import { FormsArecordComponent } from './formsArecord.component';
-import { FormsdeleteComponent } from './formsdelete.component';
+// import { FormsdeleteComponent } from './formsdelete.component';
 import { FormsforwardComponent } from './formsforwardzone.component';
 import { FormsuserComponent } from './formsuser.component';
 import { CardsdeleteComponent } from './cardsdelete.component';
