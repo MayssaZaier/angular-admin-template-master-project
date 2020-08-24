@@ -75,6 +75,13 @@ export const routes: Routes = [
       title: 'logout Page'
     }
   },
+  {
+    path: 'delete',
+    component:deleteComponent,
+    data: {
+      title: 'delete Page'
+    }
+  },
 
   {
     path: '',
