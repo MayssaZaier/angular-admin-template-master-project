@@ -59,13 +59,13 @@ const routes: Routes = [
           title: 'FormsArecord'
         }
       },
-      {
-        path: 'formsdelete',
-        component: FormsdeleteComponent,
-        data: {
-          title: 'Forms'
-        }
-      },
+      // {
+      //   path: 'formsdelete',
+      //   component: FormsdeleteComponent,
+      //   data: {
+      //     title: 'Forms'
+      //   }
+      // },
       {
         path: 'formsforward',
         component: FormsforwardComponent,

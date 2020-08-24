@@ -12,6 +12,7 @@ import { ChangeComponent } from './change/change.component';
 import { ResetComponent } from './reset/reset.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogoutComponent } from './logout/logout.component';
+import { DeleteeComponent } from './deletee/deletee.component';
 export const routes: Routes = [
   {
     path: '',
@@ -77,7 +78,7 @@ export const routes: Routes = [
   },
   {
     path: 'delete',
-    component:deleteComponent,
+    component:DeleteeComponent,
     data: {
       title: 'delete Page'
     }

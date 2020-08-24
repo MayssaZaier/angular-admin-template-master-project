@@ -1,16 +1,18 @@
-
-import { Component } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
-  templateUrl: "delete.component.html",
+  selector: 'app-deletee',
+  templateUrl: './deletee.component.html',
+  styleUrls: ['./deletee.component.css']
 })
-export class FormsdeleteComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+export class DeleteeComponent implements OnInit {
 
-  isCollapsed: boolean = false;
-  iconCollapse: string = "icon-arrow-up";
+    constructor(private router: Router, private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+  }
 
   collapsed(event: any): void {
     // console.log(event);
@@ -42,8 +44,8 @@ export class FormsdeleteComponent {
     console.log("delete_data", delete_data);
   }
 
-  toggleCollapse(): void {
-    this.isCollapsed = !this.isCollapsed;
-    this.iconCollapse = this.isCollapsed ? "icon-arrow-down" : "icon-arrow-up";
-  }
+  // toggleCollapse(): void {
+  //   this.isCollapsed = !this.isCollapsed;
+  //   this.iconCollapse = this.isCollapsed ? "icon-arrow-down" : "icon-arrow-up";
+  // }
 }
