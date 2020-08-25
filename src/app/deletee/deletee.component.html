@@ -1,6 +1,6 @@
 <p>deletee works!</p>
 
-     <!-- <div class="col-sm-6">
+<!-- <div class="col-sm-6">
         <div class="card">
           <div class="card-header">
             <strong>Credit Card</strong>
@@ -68,123 +68,123 @@
           </div>
         </div>
       </div> -->
-      <div class="animated fadeIn">
-        <div class="bg-primary text-center p-2 col-md-12">
-            <p class="lead text-white">DELETE</p>
+<div class="animated fadeIn">
+  <div class="bg-primary text-center p-2 col-md-12">
+    <p class="lead text-white">DELETE</p>
+  </div>
+
+  <div class="row"></div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        <strong>Delete</strong>
+      </div>
+      <div class="card-body" [formGroup]="deleteForm">
+        <div class="form-group">
+          <label for="company">Class</label>
+          <input
+            formControlName="class"
+            name="class"
+            type="text"
+            class="form-control"
+            id="class"
+            placeholder="Enter class"
+            required
+          />
         </div>
-          
-        <div class="row"></div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-header">
-                <strong>Delete</strong>
-              </div>
-              <div class="card-body" [formGroup]="deleteForm">
-                <div class="form-group">
-                  <label for="company">Class</label>
-                  <input
-                    formControlName="class"
-                    name="class"
-                    type="text"
-                    class="form-control"
-                    id="class"
-                    placeholder="Enter class"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="street">DnsName</label>
-                  <input
-                    formControlName="dnsname"
-                    name="dnsname"
-                    type="text"
-                    class="form-control"
-                    id="dnsname"
-                    placeholder="Enter DnsName"
-                    required
-                  />
-                </div>        
-                <div class="row">
-                  <div class="form-group col-sm-8">
-                    <label for="city">Adress</label>
-                    <input
-                      formControlName="adress"
-                      name="adress"
-                      type="text"
-                      class="form-control"
-                      id="adress"
-                      placeholder="Enter the adress"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-sm btn-danger" (click)="delete()">
-                    Delete
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div class="form-group">
+          <label for="street">DnsName</label>
+          <input
+            formControlName="dnsname"
+            name="dnsname"
+            type="text"
+            class="form-control"
+            id="dnsname"
+            placeholder="Enter DnsName"
+            required
+          />
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-8">
+            <label for="city">Adress</label>
+            <input
+              formControlName="adress"
+              name="adress"
+              type="text"
+              class="form-control"
+              id="adress"
+              placeholder="Enter the adress"
+              required
+            />
           </div>
         </div>
-      
-        <!-- <div class="row"> -->
-        <!-- <div class="col-md-6"> -->
-        <!-- <div class="card"> -->
-        <!-- <div class="card-header">
+        <div class="form-group">
+          <button class="btn btn-sm btn-danger" (click)="delete()">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row"> -->
+<!-- <div class="col-md-6"> -->
+<!-- <div class="card"> -->
+<!-- <div class="card-header">
                 <strong>Basic Form</strong> Elements
               </div> -->
-        <!-- <div class="card-body">
+<!-- <div class="card-body">
                 <form action="" method="post" enctype="multipart/form-data" class="form-horizontal"> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label">Static</label>
                     <div class="col-md-9">
                       <p class="form-control-static">Username</p>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
                     <div class="col-md-9">
                       <input type="text" id="text-input" name="text-input" class="form-control" placeholder="Text">
                       <span class="help-block">This is a help text</span>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
                     <div class="col-md-9">
                       <input type="email" id="email-input" name="email-input" class="form-control" placeholder="Enter Email" autocomplete="email">
                       <span class="help-block">Please enter your email</span>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="password-input">Password</label>
                     <div class="col-md-9">
                       <input type="password" id="password-input" name="password-input" class="form-control" placeholder="Password" autocomplete="current-password">
                       <span class="help-block">Please enter a complex password</span>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
                     <div class="col-md-9">
                       <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
                       <span class="help-block">Please enter a valid date</span>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
                     <div class="col-md-9">
                       <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="Disabled" disabled>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
                     <div class="col-md-9">
                       <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Content.."></textarea>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="select1">Select</label> -->
-        <!-- <div class="col-md-9">
+<!-- <div class="form-group row"> -->
+<!-- <label class="col-md-3 col-form-label" for="select1">Select</label> -->
+<!-- <div class="col-md-9">
                       <select id="select1" name="select1" class="form-control">
                         <option value="0">Please select</option>
                         <option value="1">Option #1</option>
@@ -192,8 +192,8 @@
                         <option value="3">Option #3</option>
                       </select>
                     </div> -->
-        <!-- </div> -->
-        <!-- <div class="form-group row">
+<!-- </div> -->
+<!-- <div class="form-group row">
                     <label class="col-md-3 col-form-label" for="select2">Select Large</label>
                     <div class="col-md-9">
                       <select id="select2" name="select2" class="form-control form-control-lg">
@@ -204,8 +204,8 @@
                       </select>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="select3">Select Small</label>
+<!-- <div class="form-group row"> -->
+<!-- <label class="col-md-3 col-form-label" for="select3">Select Small</label>
                     <div class="col-md-9">
                       <select id="select3" name="select3" class="form-control form-control-sm">
                         <option value="0">Please select</option>
@@ -214,9 +214,9 @@
                         <option value="3">Option #3</option>
                       </select>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+<!-- <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
                     <div class="col-md-9">
                       <select id="disabledSelect" class="form-control" disabled>
                         <option value="0">Please select</option>
@@ -225,9 +225,9 @@
                         <option value="3">Option #3</option>
                       </select>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
+<!-- <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
                     <div class="col-md-9">
                       <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple>
                         <option value="1">Option #1</option>
@@ -242,10 +242,10 @@
                         <option value="10">Option #10</option>
                       </select>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" >Radios</label> -->
-        <!-- <div class="col-md-9 col-form-label">
+<!-- <label class="col-md-3 col-form-label" >Radios</label> -->
+<!-- <div class="col-md-9 col-form-label">
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="radios" id="radio1" value="option1" checked>
                         <label class="form-check-label" for="radio1">
@@ -264,10 +264,10 @@
                           Option 3
                         </label>
                       </div> -->
-        <!-- </div> -->
-        <!-- </div>
+<!-- </div> -->
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="inline-radios">Inline Radios</label>
+<!-- <label class="col-md-3 col-form-label" for="inline-radios">Inline Radios</label>
                     <div class="col-md-9 col-form-label">
                       <div class="form-check form-check-inline mr-1" id="inline-radios">
                         <input class="form-check-input" type="radio" name="inline-radios" id="inlineRadio1" value="option1">
@@ -281,10 +281,10 @@
                         <input class="form-check-input" type="radio" name="inline-radios" id="inlineRadio3" value="option3">
                         <label class="form-check-label" for="inlineRadio3">Three</label>
                       </div> -->
-        <!-- </div> -->
-        <!-- </div>
+<!-- </div> -->
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label">Checkboxes</label>
+<!-- <label class="col-md-3 col-form-label">Checkboxes</label>
                     <div class="col-md-9 col-form-label">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="option1" id="checkbox1">
@@ -303,11 +303,11 @@
                         <label class="form-check-label" for="checkbox3">
                           Option 3
                         </label> -->
-        <!-- </div>
+<!-- </div>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+<!-- <label class="col-md-3 col-form-label">Inline Checkboxes</label>
                     <div class="col-md-9 col-form-label">
                       <div class="form-check form-check-inline mr-1">
                         <input class="form-check-input" type="checkbox" id="inline-checkbox1" value="option1">
@@ -322,28 +322,28 @@
                         <label class="form-check-label" for="inline-checkbox3">Three</label>
                       </div>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="file-input">File input</label>
+<!-- <label class="col-md-3 col-form-label" for="file-input">File input</label>
                     <div class="col-md-9">
                       <input type="file" id="file-input" name="file-input">
                     </div> -->
-        <!-- </div>
+<!-- </div>
                   <div class="form-group row"> -->
-        <!-- <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+<!-- <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
                     <div class="col-md-9">
                       <input type="file" id="file-multiple-input" name="file-multiple-input" multiple>
                     </div> -->
-        <!-- </div>
+<!-- </div>
                 </form>
               </div> -->
-        <!-- <div class="card-footer">
+<!-- <div class="card-footer">
                 <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div> -->
-        <!-- </div> -->
-      
-        <!-- <div class="card">
+<!-- </div> -->
+
+<!-- <div class="card">
               <div class="card-header">
                 <strong>Inline</strong> Form
               </div>
@@ -364,8 +364,8 @@
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div>
             </div> -->
-        <!-- </div> -->
-        <!-- <div class="col-md-6">
+<!-- </div> -->
+<!-- <div class="col-md-6">
             <div class="card">
               <div class="card-header">
                 <strong>Create User</strong> 
@@ -392,9 +392,9 @@
                 <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div> -->
-        <!-- </div> -->
-      
-        <!-- <div class="card">
+<!-- </div> -->
+
+<!-- <div class="card">
               <div class="card-header">
                 <strong>Normal</strong> Form
               </div>
@@ -417,8 +417,8 @@
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div>
             </div> -->
-      
-        <!-- <div class="card">
+
+<!-- <div class="card">
               <div class="card-header">
                 Input
                 <strong>Grid</strong>
@@ -460,7 +460,7 @@
                       <input type="text" class="form-control" placeholder=".col-sm-9">
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <div class="col-sm-10">
                       <input type="text" class="form-control" placeholder=".col-sm-10">
                     </div>
@@ -482,7 +482,7 @@
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div>
             </div> -->
-        <!-- <div class="card">
+<!-- <div class="card">
               <div class="card-header">
                 Input
                 <strong>Sizes</strong>
@@ -513,17 +513,17 @@
                 <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-      
-        <!-- <div class="row"> -->
-        <!-- <div class="col-sm-6"> -->
-        <!-- <div class="card"> -->
-        <!-- <div class="card-header">
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="row"> -->
+<!-- <div class="col-sm-6"> -->
+<!-- <div class="card"> -->
+<!-- <div class="card-header">
                 <strong>Validation states</strong> Form
               </div> -->
-        <!-- <form>
+<!-- <form>
                 <div class="card-body">
                   <div class="form-group">
                     <label class="form-col-form-label" for="inputSuccess1">Input with success</label>
@@ -541,11 +541,11 @@
                   </div>
                 </div>
               </form> -->
-        <!-- </div> -->
-        <!-- </div> -->
-      
-        <!-- <div class="col-sm-6"> -->
-        <!-- <div class="card">
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="col-sm-6"> -->
+<!-- <div class="card">
               <div class="card-header">
                 <strong>Validation </strong> <code>was-validated</code>
               </div>
@@ -569,12 +569,12 @@
                     </div>
                   </div>
                 </form> -->
-        <!-- </div>
+<!-- </div>
             </div> -->
-        <!-- </div>
+<!-- </div>
         </div> -->
-      
-        <!-- <div class="row">
+
+<!-- <div class="row">
           <div class="col-sm-4">
             <div class="card">
               <div class="card-header">
@@ -622,11 +622,11 @@
                 <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div> -->
-        <!-- </div>
+<!-- </div>
           </div> -->
-      
-        <!-- <div class="col-sm-4"> -->
-        <!-- <div class="card">
+
+<!-- <div class="col-sm-4"> -->
+<!-- <div class="card">
               <div class="card-header">
                 <strong>Buttons</strong> Groups
               </div>
@@ -667,14 +667,14 @@
                   </div>
                 </form>
               </div> -->
-        <!-- <div class="card-footer">
+<!-- <div class="card-footer">
                 <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div>
             </div> -->
-        <!-- </div> -->
-        <!-- <div class="col-sm-4"> -->
-        <!-- <div class="card">
+<!-- </div> -->
+<!-- <div class="col-sm-4"> -->
+<!-- <div class="card">
               <div class="card-header">
                 <strong>Dropdowns</strong> Groups
               </div>
@@ -718,7 +718,7 @@
                       </div>
                     </div>
                   </div> -->
-        <!-- <div class="form-group row">
+<!-- <div class="form-group row">
                     <div class="col-md-12">
                       <div class="input-group">
                         <div class="input-group-prepend" dropdown>
@@ -757,11 +757,11 @@
                 <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> Submit</button>
                 <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
               </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-      
-        <!-- <div class="row">
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="row">
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
@@ -1011,11 +1011,11 @@
             </div>
           </div>
         </div> -->
-        <!--/.row-->
-      
-        <!-- <div class="row"> -->
-        <!-- <div class="col-lg-12"> -->
-        <!-- <div class="card">
+<!--/.row-->
+
+<!-- <div class="row"> -->
+<!-- <div class="col-lg-12"> -->
+<!-- <div class="card">
               <div class="card-header">
                 <i class="fa fa-edit"></i>Form Elements
                 <div class="card-header-actions">
@@ -1089,7 +1089,7 @@
                       </span>
                     </div>
                   </div> -->
-        <!-- </div>
+<!-- </div>
                 <div class="form-actions">
                   <button type="submit" class="btn btn-primary">Save changes</button>
                   <button class="btn btn-secondary" type="button">Cancel</button>
@@ -1098,6 +1098,5 @@
               </div>
             </div>
           </div>  -->
-        <!-- </div> -->
-      </div>
-      
+<!-- </div> -->
+<!-- </div> -->

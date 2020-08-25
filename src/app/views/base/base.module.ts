@@ -51,7 +51,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 // Components Routing
 import { BaseRoutingModule } from "./base-routing.module";
 import { TablesAComponent } from "./tablesArecord.component";
-import { FormsdeleteComponent } from "./formsdelete.component";
+/*import { FormsdeleteComponent } from "./formsdelete.component";*/
 import { FormsforwardComponent } from "./formsforwardzone.component";
 import { FormsuserComponent } from "./formsuser.component";
 import { CardsdeleteComponent } from "./cardsdelete.component";
@@ -77,7 +77,7 @@ import { CardsdeleteComponent } from "./cardsdelete.component";
     CardsdeleteComponent,
     FormsComponent,
     FormsArecordComponent,
-    FormsdeleteComponent,
+    /* FormsdeleteComponent,*/
     FormsforwardComponent,
     FormsuserComponent,
     SwitchesComponent,

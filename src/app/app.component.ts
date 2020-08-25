@@ -1,20 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { OnInit, Component } from "@angular/core";
+import { Router, NavigationStart } from "@angular/router";
 
 @Component({
-  // tslint:disable-next-line
-  selector: 'body',
-  template: '<router-outlet></router-outlet>'
+  selector: "body",
+  template: "<router-outlet></router-outlet>",
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        console.log("event", event.url);
+        if (event.url.match(/^\/#/)) {
+          console.log("inside event match url format");
+          this.router.navigateByUrl(event.url.replace("/#", ""));
+        }
       }
-      window.scrollTo(0, 0);
     });
   }
 }

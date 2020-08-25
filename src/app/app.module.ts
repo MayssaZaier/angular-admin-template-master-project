@@ -45,7 +45,7 @@ import { ChangeComponent } from "./change/change.component";
 import { ResetComponent } from "./reset/reset.component";
 import { ContactComponent } from "./contact/contact.component";
 import { LogoutComponent } from "./logout/logout.component";
-import { DeleteeComponent } from './deletee/deletee.component';
+import { DeleteeComponent } from "./deletee/deletee.component";
 
 @NgModule({
   imports: [

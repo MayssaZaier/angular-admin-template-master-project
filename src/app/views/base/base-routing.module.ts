@@ -1,63 +1,63 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import { CardsComponent } from './cards.component';
-import { FormsComponent } from './forms.component';
-import { SwitchesComponent } from './switches.component';
-import { TablesComponent } from './tables.component';
-import { TabsComponent } from './tabs.component';
-import { CarouselsComponent } from './carousels.component';
-import { CollapsesComponent } from './collapses.component';
-import { PaginationsComponent } from './paginations.component';
-import { PopoversComponent } from './popovers.component';
-import { ProgressComponent } from './progress.component';
-import { TooltipsComponent } from './tooltips.component';
-import { NavbarsComponent } from './navbars/navbars.component';
-import { TablesAComponent } from './tablesArecord.component';
-import { FormsArecordComponent } from './formsArecord.component';
+import { CardsComponent } from "./cards.component";
+import { FormsComponent } from "./forms.component";
+import { SwitchesComponent } from "./switches.component";
+import { TablesComponent } from "./tables.component";
+import { TabsComponent } from "./tabs.component";
+import { CarouselsComponent } from "./carousels.component";
+import { CollapsesComponent } from "./collapses.component";
+import { PaginationsComponent } from "./paginations.component";
+import { PopoversComponent } from "./popovers.component";
+import { ProgressComponent } from "./progress.component";
+import { TooltipsComponent } from "./tooltips.component";
+import { NavbarsComponent } from "./navbars/navbars.component";
+import { TablesAComponent } from "./tablesArecord.component";
+import { FormsArecordComponent } from "./formsArecord.component";
 // import { FormsdeleteComponent } from './formsdelete.component';
-import { FormsforwardComponent } from './formsforwardzone.component';
-import { FormsuserComponent } from './formsuser.component';
-import { CardsdeleteComponent } from './cardsdelete.component';
+import { FormsforwardComponent } from "./formsforwardzone.component";
+import { FormsuserComponent } from "./formsuser.component";
+import { CardsdeleteComponent } from "./cardsdelete.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     data: {
-      title: 'Base'
+      title: "Base",
     },
     children: [
       {
-        path: '',
-        redirectTo: 'cards'
+        path: "",
+        redirectTo: "cards",
       },
       {
-        path: 'cards',
+        path: "cards",
         component: CardsComponent,
         data: {
-          title: 'Cards'
-        }
+          title: "Cards",
+        },
       },
       {
-        path: 'cardsdelete',
+        path: "cardsdelete",
         component: CardsdeleteComponent,
         data: {
-          title: 'Cards'
-        }
+          title: "Cards",
+        },
       },
       {
-        path: 'forms',
+        path: "forms",
         component: FormsComponent,
         data: {
-          title: 'Forms'
-        }
+          title: "Forms",
+        },
       },
       {
-        path: 'formsArecord',
+        path: "formsArecord",
         component: FormsArecordComponent,
         data: {
-          title: 'FormsArecord'
-        }
+          title: "FormsArecord",
+        },
       },
       // {
       //   path: 'formsdelete',
@@ -67,102 +67,102 @@ const routes: Routes = [
       //   }
       // },
       {
-        path: 'formsforward',
+        path: "formsforward",
         component: FormsforwardComponent,
         data: {
-          title: 'Forms'
-        }
+          title: "Forms",
+        },
       },
       {
-        path: 'formsuser',
+        path: "formsuser",
         component: FormsuserComponent,
         data: {
-          title: 'Forms'
-        }
+          title: "Forms",
+        },
       },
       {
-        path: 'switches',
+        path: "switches",
         component: SwitchesComponent,
         data: {
-          title: 'Switches'
-        }
+          title: "Switches",
+        },
       },
       {
-        path: 'tables',
+        path: "tables",
         component: TablesComponent,
         data: {
-          title: 'Tables'
-        }
+          title: "Tables",
+        },
       },
       {
-        path: 'tablesArecord',
+        path: "tablesArecord",
         component: TablesAComponent,
         data: {
-          title: 'Tables'
-        }
+          title: "Tables",
+        },
       },
       {
-        path: 'tabs',
+        path: "tabs",
         component: TabsComponent,
         data: {
-          title: 'Tabs'
-        }
+          title: "Tabs",
+        },
       },
       {
-        path: 'carousels',
+        path: "carousels",
         component: CarouselsComponent,
         data: {
-          title: 'Carousels'
-        }
+          title: "Carousels",
+        },
       },
       {
-        path: 'collapses',
+        path: "collapses",
         component: CollapsesComponent,
         data: {
-          title: 'Collapses'
-        }
+          title: "Collapses",
+        },
       },
       {
-        path: 'paginations',
+        path: "paginations",
         component: PaginationsComponent,
         data: {
-          title: 'Pagination'
-        }
+          title: "Pagination",
+        },
       },
       {
-        path: 'popovers',
+        path: "popovers",
         component: PopoversComponent,
         data: {
-          title: 'Popover'
-        }
+          title: "Popover",
+        },
       },
       {
-        path: 'progress',
+        path: "progress",
         component: ProgressComponent,
         data: {
-          title: 'Progress'
-        }
+          title: "Progress",
+        },
       },
       {
-        path: 'tooltips',
+        path: "tooltips",
         component: TooltipsComponent,
         data: {
-          title: 'Tooltips'
-        }
+          title: "Tooltips",
+        },
       },
       {
-        path: 'navbars',
+        path: "navbars",
         component: NavbarsComponent,
         data: {
-          title: 'Navbars'
-        }
-      }
-    ]
-  }
+          title: "Navbars",
+        },
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class BaseRoutingModule {}

@@ -1,92 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Table with Add and Delete Row Feature</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="tables.component.js"></script> 
-
-</head>
-<body>
-  <div class="container">
-    <div class="table-responsive" id="sailorTableArea">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Table with Add and Delete Row Feature</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="tables.component.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-responsive" id="sailorTableArea">
         <div class="bg-primary text-center p-2 col-md-12">
-            <p class="lead text-white">AAAA Record Search Results </p>
-            <div class="container">
-              <div class="row">
-                 <a href="#" class="btn btn-primary a-btn-slide-text">
-                   <span 
-                     class="glyphicon glyphicon-remove" aria-hidden="true"> 
-                   </span>
-                    <span>
-                        <button class="btn btn-sm btn-danger"
-                         [routerLink]="['/delete']"> Delete
-                        </button>      
-                    </span>      
-                    <!-- <button class="btn btn-sm btn-danger" [routerLink]="['/base/cardscreate']">Delete</button>       -->
-                 </a>
-              </div>
-             </div>
+          <p class="lead text-white">AAAA Record Search Results</p>
+          <div class="container">
+            <div class="row">
+              <a href="#" class="btn btn-primary a-btn-slide-text">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true">
+                </span>
+                <span>
+                  <button
+                    class="btn btn-sm btn-danger"
+                    [routerLink]="['../../delete']"
+                  >
+                    Delete
+                  </button>
+                </span>
+                <!-- <button class="btn btn-sm btn-danger" [routerLink]="['/base/cardscreate']">Delete</button>       -->
+              </a>
             </div>
-
-    <table id="sailorTable" class="table table-striped table-bordered" width="100%">            
-            <thead>
-             <tr>
-                <th>DnsName</th>
-                <th>Ttl</th>
-                <th>Class</th>
-                <th>Type</th>
-                <th>RData</th>
-                <th>Container</th>
-                <th>Zone</th>
-                <th>ZoneId</th>
-                <th>Actions</th>
-             </tr>
-            </thead>
-            <tbody>
-              <tr>
-                 <td>xx</td>
-                 <td> </td>
-                 <td>  </td>
-                 <td>A </td>
-                 <td>197.26.8.1</td>
-                 <td>Default</td>
-                 <td>mnc001</td>
-                 <td>tn1.idns1</td>
-                 <td>
-                   <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                   <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                   <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
-                 </td>
-                </tr>
-        
-                <tr>
-                  <td>xx</td>
-                  <td> </td>
-                  <td>  </td>
-                  <td>A </td>
-                  <td>197.26.8.1</td>
-                  <td>Default</td>
-                  <td>mnc001</td>
-                  <td>tn1.idns1</td>
-                  <td>
-                   <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
-                   <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
-                   <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
-                  </td>
-                 </tr> 
-            
-                </tbody>
-            </table>
+          </div>
         </div>
-    </div>     
-</body>
-</html>                            
+
+        <table
+          id="sailorTable"
+          class="table table-striped table-bordered"
+          width="100%"
+        >
+          <thead>
+            <tr>
+              <th>DnsName</th>
+              <th>Ttl</th>
+              <th>Class</th>
+              <th>Type</th>
+              <th>RData</th>
+              <th>Container</th>
+              <th>Zone</th>
+              <th>ZoneId</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td>A</td>
+              <td>197.26.8.1</td>
+              <td>Default</td>
+              <td>mnc001</td>
+              <td>tn1.idns1</td>
+              <td>
+                <a class="add" title="Add" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+                <a class="edit" title="Edit" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+                <a class="delete" title="Delete" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td>A</td>
+              <td>197.26.8.1</td>
+              <td>Default</td>
+              <td>mnc001</td>
+              <td>tn1.idns1</td>
+              <td>
+                <a class="add" title="Add" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+                <a class="edit" title="Edit" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+                <a class="delete" title="Delete" data-toggle="tooltip"
+                  ><i class="material-icons"></i></a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

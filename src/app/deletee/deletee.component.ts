@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-deletee',
-  templateUrl: './deletee.component.html',
-  styleUrls: ['./deletee.component.css']
+  selector: "app-deletee",
+  templateUrl: "./deletee.component.html",
+  styleUrls: ["./deletee.component.css"],
 })
 export class DeleteeComponent implements OnInit {
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
-    constructor(private router: Router, private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   collapsed(event: any): void {
     // console.log(event);
